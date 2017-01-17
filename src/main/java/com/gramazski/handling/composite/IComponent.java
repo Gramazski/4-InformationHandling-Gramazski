@@ -6,5 +6,4 @@ package com.gramazski.handling.composite;
 public interface IComponent {
     void add(IComponent component);
     void remove(IComponent component);
-
 }
