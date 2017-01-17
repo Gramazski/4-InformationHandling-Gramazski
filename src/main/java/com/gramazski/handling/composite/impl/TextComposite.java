@@ -31,12 +31,13 @@ public class TextComposite implements IComponent {
 
     @Override
     public String toString(){
-        String result = separatingLexeme;
+        String result = "";
 
         for (IComponent component : textComponents){
             result += component.toString();
         }
 
+        result += separatingLexeme;
         return result;
     }
 }
