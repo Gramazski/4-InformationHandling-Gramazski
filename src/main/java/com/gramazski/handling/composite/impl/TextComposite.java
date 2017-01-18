@@ -12,13 +12,21 @@ import java.util.ArrayList;
 public class TextComposite implements IComponent {
     private ArrayList<IComponent> textComponents;
     private TextPartType textPartType;
-    //Use for building text from composite parts, like /n or ' '
+    //Use for building text from impl parts, like \n or ' '
     private String separatingLexeme;
 
     public TextComposite(TextPartType textPartType, String separatingLexeme){
         this.textComponents = new ArrayList<IComponent>();
         this.textPartType = textPartType;
         this.separatingLexeme = separatingLexeme;
+        //BreakFAG
+        if (this.textPartType == TextPartType.WORD){
+            this.separatingLexeme = " ";
+        }
+
+        if (this.textPartType == TextPartType.PARAGRAPH){
+            this.separatingLexeme = "\n";
+        }
     }
 
     public void add(IComponent component) {
@@ -27,6 +35,10 @@ public class TextComposite implements IComponent {
 
     public void remove(IComponent component) {
         textComponents.remove(component);
+    }
+
+    public void setValue(String value) {
+        //Doing nothing
     }
 
     @Override

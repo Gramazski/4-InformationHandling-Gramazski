@@ -1,2 +1,2 @@
-Some, text! /n
-Some trt. /n
+Some, text!
+Some trt.

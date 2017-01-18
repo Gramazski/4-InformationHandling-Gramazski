@@ -10,9 +10,9 @@ public class LexemeLeaf implements IComponent {
     private String lexeme;
     private LexemeType lexemeType;
 
-    //Checking with null
-    public LexemeLeaf(String lexeme, LexemeType lexemeType){
-        this.lexeme = lexeme;
+    //Adding type defining
+    public LexemeLeaf(LexemeType lexemeType){
+        //this.lexeme = lexeme;
         this.lexemeType = lexemeType;
     }
 
@@ -22,6 +22,10 @@ public class LexemeLeaf implements IComponent {
 
     public void remove(IComponent component) {
         //Doing nothing
+    }
+
+    public void setValue(String value) {
+        lexeme = value;
     }
 
     @Override

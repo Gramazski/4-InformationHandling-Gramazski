@@ -1,12 +1,19 @@
 package com.gramazski.handling.parser;
 
 import com.gramazski.handling.composite.IComponent;
+import com.gramazski.handling.composite.attribute.composite.TextPartType;
+import com.gramazski.handling.composite.factory.AbstractComponentFactory;
+import com.gramazski.handling.composite.storage.StorageTable;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 /**
  * Created by gs on 17.01.2017.
  */
 public abstract class AbstractTextHandler {
     protected AbstractTextHandler successor;
+    protected TextPartType textType;
+    protected Logger logger = LogManager.getLogger(AbstractTextHandler.class);
 
     //Can be boolean for getting success or not handling
     public void handleRequest(String data, IComponent compositeText){
@@ -16,5 +23,18 @@ public abstract class AbstractTextHandler {
     }
 
     protected abstract String[] decomposeText(String data, IComponent compositeText);
-    protected abstract void chain(String[] decomposingText, IComponent compositeText);
+
+    private void chain(String[] decomposingText, IComponent compositeText) {
+        StorageTable storageTable = new StorageTable();
+        for (int i = 0; i < decomposingText.length; i++){
+            //Add regexp for finding syntax letters
+            AbstractComponentFactory componentFactory = storageTable.getComponent(textType);
+            IComponent textComponent = componentFactory.getComponent(textType, "");
+            textComponent.setValue(decomposingText[i]);
+            compositeText.add(textComponent);
+            if (successor != null){
+                successor.handleRequest(decomposingText[i], textComponent);
+            }
+        }
+    }
 }

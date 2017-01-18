@@ -38,6 +38,7 @@ public class TextFileReader extends AbstractReader {
 
         while (fileScanner.hasNext()){
             stringBuilder.append(fileScanner.nextLine());
+            stringBuilder.append(" \n");
         }
 
         fileScanner.close();
