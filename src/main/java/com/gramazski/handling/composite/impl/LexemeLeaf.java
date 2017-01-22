@@ -7,7 +7,7 @@ import com.gramazski.handling.composite.attribute.leaf.LexemeType;
  * Created by gs on 17.01.2017.
  */
 public class LexemeLeaf implements IComponent {
-    private String lexeme;
+    private Character lexeme;
     private LexemeType lexemeType;
 
     //Adding type defining
@@ -25,11 +25,11 @@ public class LexemeLeaf implements IComponent {
     }
 
     public void setValue(String value) {
-        lexeme = value;
+        lexeme = value.charAt(0);
     }
 
     @Override
     public String toString(){
-        return lexeme;
+        return String.valueOf(lexeme);
     }
 }
