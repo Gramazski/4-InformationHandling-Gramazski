@@ -4,6 +4,7 @@ import com.gramazski.handling.composite.IComponent;
 import com.gramazski.handling.composite.attribute.composite.TextPartType;
 import com.gramazski.handling.composite.factory.AbstractComponentFactory;
 import com.gramazski.handling.composite.storage.StorageTable;
+import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -28,7 +29,8 @@ public abstract class AbstractTextHandler {
         StorageTable storageTable = new StorageTable();
         for (int i = 0; i < decomposingText.length; i++){
             //Add regexp for finding syntax letters
-            AbstractComponentFactory componentFactory = storageTable.getComponent(textType);
+            logger.log(Level.DEBUG, "Text part - " + decomposingText[i]);
+            AbstractComponentFactory componentFactory = storageTable.getComponentFactory(textType);
             IComponent textComponent = componentFactory.getComponent(textType, "");
             textComponent.setValue(decomposingText[i]);
             compositeText.add(textComponent);

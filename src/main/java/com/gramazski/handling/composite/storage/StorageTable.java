@@ -24,7 +24,7 @@ public class StorageTable {
         componentMap.put(TextPartType.LETTER, new LeafFactory());
     }
 
-    public AbstractComponentFactory getComponent(TextPartType textType){
+    public AbstractComponentFactory getComponentFactory(TextPartType textType){
         if (componentMap.containsKey(textType)){
             return componentMap.get(textType);
         }
