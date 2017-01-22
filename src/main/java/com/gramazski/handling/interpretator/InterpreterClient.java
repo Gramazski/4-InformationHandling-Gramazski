@@ -49,6 +49,7 @@ public class InterpreterClient {
                         listExpression.add(
                                 new NonterminalExpressionNumber(scan.nextInt()));
                     }
+                    break;
             }
         }
     }

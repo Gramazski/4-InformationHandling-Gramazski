@@ -8,6 +8,8 @@ import com.gramazski.handling.interpretator.context.ExpressionContext;
  */
 public class TerminalExpressionSubtract extends AbstractExpression {
     public void interpret(ExpressionContext context) {
-        context.pushValue(context.popValue() - context.popValue());
+        int previousValue = context.popValue();
+
+        context.pushValue(context.popValue() - previousValue);
     }
 }
