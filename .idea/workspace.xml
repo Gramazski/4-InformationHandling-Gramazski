@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="29afd53b-24db-4f47-b590-4d6d6050034b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/gramazski/handling/interpretator/parser/ExpressionParser.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/gramazski/handling/interpretator/InterpreterClientTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/gramazski/handling/interpretator/parser/ExpressionParserTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gramazski/handling/interpretator/InterpreterClient.java" afterPath="$PROJECT_DIR$/src/main/java/com/gramazski/handling/interpretator/InterpreterClient.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gramazski/handling/interpretator/impl/terminal/TerminalExpressionAdd.java" afterPath="$PROJECT_DIR$/src/main/java/com/gramazski/handling/interpretator/impl/terminal/TerminalExpressionAdd.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gramazski/handling/interpretator/impl/terminal/TerminalExpressionDivide.java" afterPath="$PROJECT_DIR$/src/main/java/com/gramazski/handling/interpretator/impl/terminal/TerminalExpressionDivide.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gramazski/handling/interpretator/impl/terminal/TerminalExpressionMultiply.java" afterPath="$PROJECT_DIR$/src/main/java/com/gramazski/handling/interpretator/impl/terminal/TerminalExpressionMultiply.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gramazski/handling/interpretator/impl/terminal/TerminalExpressionSubtract.java" afterPath="$PROJECT_DIR$/src/main/java/com/gramazski/handling/interpretator/impl/terminal/TerminalExpressionSubtract.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gramazski/handling/parser/impl/WordHandler.java" afterPath="$PROJECT_DIR$/src/main/java/com/gramazski/handling/parser/impl/WordHandler.java" />
     </list>
     <ignored path="4-InformationHandling-Gramazski.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,16 +27,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="WordHandler.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gramazski/handling/parser/impl/WordHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="99" selection-start-line="14" selection-start-column="99" selection-end-line="14" selection-end-column="99" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="InterpreterClient.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/gramazski/handling/interpretator/InterpreterClient.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="168">
-              <caret line="20" column="47" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
+              <caret line="18" column="47" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#470#490#0" expanded="true" />
-                <element signature="e#543#544#0" expanded="true" />
-                <element signature="e#576#577#0" expanded="true" />
+                <element signature="e#539#559#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -119,7 +123,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InterpreterClientTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="InterpreterClientTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/gramazski/handling/interpretator/InterpreterClientTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="178">
@@ -139,18 +143,6 @@
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#241#252#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ExpressionParserTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/gramazski/handling/interpretator/parser/ExpressionParserTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="76" />
-              <folding>
-                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -194,7 +186,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/gramazski/handling/composite/impl/TextComposite.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gramazski/handling/parser/impl/LetterHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gramazski/handling/parser/impl/ParagraphHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gramazski/handling/parser/impl/WordHandler.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/gramazski/handling/parser/AbstractTextHandlerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gramazski/handling/reader/file/TextFileReader.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gramazski/handling/composite/storage/StorageTable.java" />
@@ -208,13 +199,14 @@
         <option value="$PROJECT_DIR$/src/main/java/com/gramazski/handling/interpretator/impl/terminal/TerminalExpressionCosine.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gramazski/handling/interpretator/impl/nonterminal/NonterminalExpressionNumber.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/gramazski/handling/interpretator/parser/ExpressionParserTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gramazski/handling/interpretator/InterpreterClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gramazski/handling/interpretator/impl/terminal/TerminalExpressionSubtract.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gramazski/handling/interpretator/impl/terminal/TerminalExpressionDivide.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gramazski/handling/interpretator/impl/terminal/TerminalExpressionMultiply.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gramazski/handling/interpretator/impl/terminal/TerminalExpressionAdd.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/gramazski/handling/interpretator/InterpreterClientTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gramazski/handling/interpretator/parser/ExpressionParser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gramazski/handling/interpretator/InterpreterClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gramazski/handling/parser/impl/WordHandler.java" />
       </list>
     </option>
   </component>
@@ -1166,7 +1158,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="js-jscs-nodeInterpreter" value="D:\nodejs\node.exe" />
-    <property name="last.edited.regexp" value="Sample Text" />
+    <property name="last.edited.regexp" value="2+2-3*9*2-2" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -1702,7 +1694,7 @@
       <workItem from="1484673259472" duration="7502000" />
       <workItem from="1484682193162" duration="8000" />
       <workItem from="1484720075696" duration="7630000" />
-      <workItem from="1485097325508" duration="8776000" />
+      <workItem from="1485097325508" duration="10258000" />
     </task>
     <task id="LOCAL-00001" summary="Project structure added.">
       <created>1484581275004</created>
@@ -1753,7 +1745,14 @@
       <option name="project" value="LOCAL" />
       <updated>1485101600057</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Expression parsing added (convert to inverse expression). Tests for expression parser &amp;&amp; interpreter client added.">
+      <created>1485106202748</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1485106202748</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1789,7 +1788,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24965000" />
+    <option name="totallyTimeSpent" value="26447000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="0" />
@@ -1803,7 +1802,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3288889" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288889" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1841,7 +1840,8 @@
     <MESSAGE value="Type TEXT for TextPartType added, sentence handler get regexp. Test for text handler added." />
     <MESSAGE value="Component factory added. Storage for getting factories added (will be modified on static singleton). File reader modified - &quot; \n&quot; added. Handlers chain modified - method chain become private &amp;&amp; independent of handler type (realized with storage &amp;&amp; factories)." />
     <MESSAGE value="Base implementation of interpreter added." />
-    <option name="LAST_COMMIT_MESSAGE" value="Base implementation of interpreter added." />
+    <MESSAGE value="Expression parsing added (convert to inverse expression). Tests for expression parser &amp;&amp; interpreter client added." />
+    <option name="LAST_COMMIT_MESSAGE" value="Expression parsing added (convert to inverse expression). Tests for expression parser &amp;&amp; interpreter client added." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2172,16 +2172,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gramazski/handling/parser/impl/WordHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gramazski/handling/parser/AbstractTextHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -2219,10 +2209,10 @@
         <state relative-caret-position="289">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#386#387#0" expanded="true" />
-            <element signature="e#422#423#0" expanded="true" />
-            <element signature="e#478#479#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#386#387#0" expanded="false" />
+            <element signature="e#422#423#0" expanded="false" />
+            <element signature="e#478#479#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2296,19 +2286,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gramazski/handling/interpretator/InterpreterClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="20" column="47" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#470#490#0" expanded="true" />
-            <element signature="e#543#544#0" expanded="true" />
-            <element signature="e#576#577#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gramazski/handling/interpretator/parser/ExpressionParser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
@@ -2324,6 +2301,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="178">
           <caret line="17" column="59" selection-start-line="17" selection-start-column="59" selection-end-line="17" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gramazski/handling/interpretator/InterpreterClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="18" column="47" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#539#559#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gramazski/handling/parser/impl/WordHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="99" selection-start-line="14" selection-start-column="99" selection-end-line="14" selection-end-column="99" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

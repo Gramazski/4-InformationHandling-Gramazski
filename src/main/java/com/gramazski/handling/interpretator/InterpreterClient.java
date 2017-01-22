@@ -3,6 +3,7 @@ package com.gramazski.handling.interpretator;
 import com.gramazski.handling.interpretator.context.ExpressionContext;
 import com.gramazski.handling.interpretator.impl.nonterminal.NonterminalExpressionNumber;
 import com.gramazski.handling.interpretator.impl.terminal.*;
+import com.gramazski.handling.interpretator.parser.ExpressionParser;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -14,7 +15,8 @@ public class InterpreterClient {
     private ArrayList<AbstractExpression> listExpression = new ArrayList<AbstractExpression>();
 
     public void setExpression(String expression){
-        parse(expression);
+        ExpressionParser expressionParser = new ExpressionParser();
+        parse(expressionParser.parse(expression));
     }
 
     private void parse(String expression) {
