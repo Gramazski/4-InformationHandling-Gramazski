@@ -9,7 +9,7 @@ import org.junit.Test;
 public class ExpressionParserTest {
     @Test
     public void parse() throws Exception {
-        String expression = "2+4*(2-3/(4-2))";
+        String expression = "-2+4*cos(2-3/(4-2))";
         String expected = "242342-/-*+";
         ExpressionParser parser = new ExpressionParser();
 
@@ -18,4 +18,12 @@ public class ExpressionParserTest {
         Assert.assertEquals("Expression parsing failed.", expected, actual);
     }
 
+    @Test
+    public void preparingForParsing(){
+        String expression = "(-2)";
+        String expected = "((1-2))";
+        ExpressionParser expressionParser = new ExpressionParser();
+        String actual = expressionParser.prepareForParsing(expression);
+        Assert.assertEquals("Preparing for parsing failed.", expected, actual);
+    }
 }
