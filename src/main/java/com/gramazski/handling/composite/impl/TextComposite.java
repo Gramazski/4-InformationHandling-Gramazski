@@ -4,6 +4,7 @@ import com.gramazski.handling.composite.IComponent;
 import com.gramazski.handling.composite.attribute.composite.TextPartType;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by gs on 17.01.2017.
@@ -41,6 +42,17 @@ public class TextComposite implements IComponent {
         //Doing nothing
     }
 
+    //Realize clone for coping collection
+    public List<IComponent> getInnerList() {
+        ArrayList<IComponent> innerComponents = new ArrayList<IComponent>(textComponents.size());
+        innerComponents.addAll(textComponents);
+        return innerComponents;
+    }
+
+    public TextPartType getComponentType() {
+        return textPartType;
+    }
+
     @Override
     public String toString(){
         String result = "";
@@ -51,5 +63,24 @@ public class TextComposite implements IComponent {
 
         result += separatingLexeme;
         return result;
+    }
+
+    @Override
+    public boolean equals(Object other){
+        if (this == other)
+            return true;
+        if (other == null)
+            return false;
+        if (getClass() != other.getClass())
+            return false;
+
+        IComponent otherComponent = (IComponent) other;
+
+        if (this.toString().equals(otherComponent.toString())){
+            return true;
+        }
+        else {
+            return false;
+        }
     }
 }

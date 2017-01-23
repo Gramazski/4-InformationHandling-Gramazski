@@ -1,17 +1,20 @@
 package com.gramazski.handling.composite.impl;
 
 import com.gramazski.handling.composite.IComponent;
-import com.gramazski.handling.composite.attribute.leaf.LexemeType;
+import com.gramazski.handling.composite.attribute.composite.TextPartType;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by gs on 17.01.2017.
  */
 public class LexemeLeaf implements IComponent {
     private Character lexeme;
-    private LexemeType lexemeType;
+    private TextPartType lexemeType;
 
     //Adding type defining
-    public LexemeLeaf(LexemeType lexemeType){
+    public LexemeLeaf(TextPartType lexemeType){
         //this.lexeme = lexeme;
         this.lexemeType = lexemeType;
     }
@@ -26,6 +29,15 @@ public class LexemeLeaf implements IComponent {
 
     public void setValue(String value) {
         lexeme = value.charAt(0);
+    }
+
+    public List<IComponent> getInnerList() {
+        //Not realized
+        return new ArrayList<IComponent>();
+    }
+
+    public TextPartType getComponentType() {
+        return lexemeType;
     }
 
     @Override
