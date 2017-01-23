@@ -8,6 +8,6 @@ import com.gramazski.handling.interpretator.context.ExpressionContext;
  */
 public class TerminalExpressionMultiply extends AbstractExpression {
     public void interpret(ExpressionContext context) {
-        context.pushValue(context.popValue() * context.popValue());
+        context.pushValue(context.popValue().doubleValue() * context.popValue().doubleValue());
     }
 }

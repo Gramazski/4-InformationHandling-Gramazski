@@ -8,6 +8,6 @@ import com.gramazski.handling.interpretator.context.ExpressionContext;
  */
 public class TerminalExpressionSinus extends AbstractExpression {
     public void interpret(ExpressionContext context) {
-        context.pushValue((int)Math.sin(context.popValue()));
+        context.pushValue(Math.sin(context.popValue().doubleValue()));
     }
 }

@@ -7,11 +7,11 @@ import java.util.Deque;
  * Created by gs on 22.01.2017.
  */
 public class ExpressionContext {
-    private Deque<Integer> contextValues = new ArrayDeque<Integer>();
-    public Integer popValue() {
+    private Deque<Number> contextValues = new ArrayDeque<Number>();
+    public Number popValue() {
         return contextValues.pop();
     }
-    public void pushValue(Integer value) {
+    public void pushValue(Number value) {
         this.contextValues.push(value);
     }
 }

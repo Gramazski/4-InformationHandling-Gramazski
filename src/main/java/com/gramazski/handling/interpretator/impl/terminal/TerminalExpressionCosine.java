@@ -8,6 +8,6 @@ import com.gramazski.handling.interpretator.context.ExpressionContext;
  */
 public class TerminalExpressionCosine extends AbstractExpression {
     public void interpret(ExpressionContext context) {
-        context.pushValue((int)Math.cos(context.popValue()));
+        context.pushValue(Math.cos(context.popValue().doubleValue()));
     }
 }

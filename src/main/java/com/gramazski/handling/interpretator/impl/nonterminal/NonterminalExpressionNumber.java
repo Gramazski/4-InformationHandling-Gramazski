@@ -7,9 +7,9 @@ import com.gramazski.handling.interpretator.context.ExpressionContext;
  * Created by gs on 22.01.2017.
  */
 public class NonterminalExpressionNumber extends AbstractExpression {
-    private int number;
+    private double number;
 
-    public NonterminalExpressionNumber(int number) {
+    public NonterminalExpressionNumber(double number) {
         this.number = number;
     }
 

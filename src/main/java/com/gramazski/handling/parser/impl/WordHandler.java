@@ -12,7 +12,7 @@ import java.util.regex.Pattern;
  * Created by gs on 17.01.2017.
  */
 public class WordHandler extends AbstractTextHandler {
-    private static final Pattern EXPRESSION_REG = Pattern.compile("^(?:\\d+[*+/-])+\\d+$");//Change
+    private static final Pattern EXPRESSION_REG = Pattern.compile("[//(|\\d|[-]]");//Change
 
     public WordHandler(){
         successor = new LetterHandler();

@@ -49,7 +49,7 @@ public class InterpreterClient {
                     Scanner scan = new Scanner(lexeme);
                     if (scan.hasNextInt()) {
                         listExpression.add(
-                                new NonterminalExpressionNumber(scan.nextInt()));
+                                new NonterminalExpressionNumber(scan.nextDouble()));
                     }
                     break;
             }
