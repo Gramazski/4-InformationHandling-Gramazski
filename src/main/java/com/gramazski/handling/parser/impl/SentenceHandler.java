@@ -26,7 +26,7 @@ public class SentenceHandler extends AbstractTextHandler {
         while (matcher.find()){
             stringArrayList.add(matcher.group().trim());
         }
-        logger.log(Level.DEBUG, "Group: " + stringArrayList.toString());
+        logger.log(Level.DEBUG, "Group: " + stringArrayList);
 
         return stringArrayList.toArray(new String[stringArrayList.size()]);
     }

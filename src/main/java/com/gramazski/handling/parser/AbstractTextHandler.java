@@ -4,6 +4,7 @@ import com.gramazski.handling.composite.IComponent;
 import com.gramazski.handling.composite.attribute.composite.TextPartType;
 import com.gramazski.handling.composite.factory.AbstractComponentFactory;
 import com.gramazski.handling.composite.storage.StorageTable;
+import com.gramazski.handling.exception.KeyNotFoundException;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -16,7 +17,6 @@ public abstract class AbstractTextHandler {
     protected TextPartType textType;
     protected Logger logger = LogManager.getLogger(AbstractTextHandler.class);
 
-    //Can be boolean for getting success or not handling
     public void handleRequest(String data, IComponent compositeText){
         String[] decomposingText = decomposeText(data, compositeText);
 
@@ -29,13 +29,18 @@ public abstract class AbstractTextHandler {
         StorageTable storageTable = new StorageTable();
         for (int i = 0; i < decomposingText.length; i++){
             //Add regexp for finding syntax letters
-            logger.log(Level.DEBUG, "Text part - " + decomposingText[i]);
-            AbstractComponentFactory componentFactory = storageTable.getComponentFactory(textType);
-            IComponent textComponent = componentFactory.getComponent(textType, "");
-            textComponent.setValue(decomposingText[i]);
-            compositeText.add(textComponent);
-            if (successor != null){
-                successor.handleRequest(decomposingText[i], textComponent);
+            try{
+                logger.log(Level.DEBUG, "Text part - " + decomposingText[i]);
+                AbstractComponentFactory componentFactory = storageTable.getComponentFactory(textType);
+                IComponent textComponent = componentFactory.getComponent(textType, "");
+                textComponent.setValue(decomposingText[i]);
+                compositeText.add(textComponent);
+                if (successor != null){
+                    successor.handleRequest(decomposingText[i], textComponent);
+                }
+            }
+            catch (KeyNotFoundException ex){
+                logger.log(Level.DEBUG, ex.getMessage());
             }
         }
     }

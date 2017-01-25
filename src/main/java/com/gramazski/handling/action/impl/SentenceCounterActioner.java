@@ -13,6 +13,10 @@ import java.util.List;
 public class SentenceCounterActioner extends AbstractActioner {
     private ArrayList<IComponent> sentenceWithSameWords = new ArrayList<IComponent>();
 
+    public IComponent getResult() {
+        return null;
+    }
+
     protected void processSentence(IComponent sentence) {
         List<IComponent> wordsList = sentence.getInnerList();
 

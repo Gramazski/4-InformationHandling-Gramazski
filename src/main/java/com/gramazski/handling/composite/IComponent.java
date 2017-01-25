@@ -10,6 +10,7 @@ import java.util.List;
 public interface IComponent {
     void add(IComponent component);
     void remove(IComponent component);
+    //Parametrized
     void setValue(String value);
     List<IComponent> getInnerList();
     TextPartType getComponentType();

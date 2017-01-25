@@ -10,7 +10,7 @@ import com.gramazski.handling.composite.impl.LexemeLeaf;
  */
 public class LeafFactory extends AbstractComponentFactory {
     public IComponent getComponent(TextPartType textPartType, String separator) {
-        IComponent component = new LexemeLeaf(TextPartType.LETTER);
+        IComponent component = new LexemeLeaf(textPartType);
         return component;
     }
 }

@@ -9,7 +9,7 @@ import org.junit.Test;
 public class ExpressionParserTest {
     @Test
     public void parse() throws Exception {
-        String expression = "-2+4*cos(2-3/(4-2))";
+        String expression = "-20+4*cos(2-3/(4-2))";
         String expected = "242342-/-*+";
         ExpressionParser parser = new ExpressionParser();
 

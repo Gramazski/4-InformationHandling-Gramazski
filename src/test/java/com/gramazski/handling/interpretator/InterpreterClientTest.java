@@ -12,7 +12,7 @@ public class InterpreterClientTest {
     //Unary minus
     public void calculate() throws Exception {
         InterpreterClient interpreterClient = new InterpreterClient();
-        String expression = "-2+4*cos(2-4/(4-2))";
+        String expression = "Pi";
         int expected = 2;
         ExpressionParser parser = new ExpressionParser();
         //String inverseExpression = parser.parse(expression);

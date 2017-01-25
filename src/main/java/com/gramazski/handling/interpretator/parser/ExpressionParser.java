@@ -10,7 +10,7 @@ import java.util.regex.Pattern;
  */
 public class ExpressionParser {
     private Deque<Character> expressionStack = new ArrayDeque<Character>();
-    private static final Pattern MINUS_REG = Pattern.compile("[\\D]+[-]+[\\d]");
+    private static final Pattern MINUS_REG = Pattern.compile("[\\D]+[-]+[\\d]+");
 
     public String parse(String expression){
         expression = prepareForParsing(expression);
@@ -25,9 +25,13 @@ public class ExpressionParser {
 
             if (priority == 5){
                 parsingExpression += currentSymbol;
-                parsingExpression += " ";
+                //parsingExpression += " ";
             }
             else {
+                if (!parsingExpression.endsWith(" ")){
+                    parsingExpression += " ";
+                }
+
                 if (!(expressionStack.isEmpty()) && (priority != 0)){
                     Boolean outFromCycleFlag = false;
 
@@ -94,6 +98,7 @@ public class ExpressionParser {
         return priority;
     }
 
+    //Will be private
     public String prepareForParsing(String expression){
         String preparedExpression = "(" + expression + ")";
 
@@ -109,6 +114,7 @@ public class ExpressionParser {
 
         preparedExpression = preparedExpression.replace("sin", "s");
         preparedExpression = preparedExpression.replace("cos", "c");
+        preparedExpression = preparedExpression.replace("Pi", "p");
 
         return preparedExpression;
     }

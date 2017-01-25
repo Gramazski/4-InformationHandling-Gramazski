@@ -6,11 +6,10 @@ import com.gramazski.handling.composite.attribute.composite.TextPartType;
 /**
  * Created by gs on 23.01.2017.
  */
-//How to return result?
 public abstract class AbstractActioner {
     public void handle(IComponent rootComponent){
         for (IComponent component : rootComponent.getInnerList()){
-            if (component.getComponentType().equals(TextPartType.SENTENCE)){
+            if (TextPartType.SENTENCE.equals(component.getComponentType())){
                 processSentence(component);
             }
             else{
@@ -19,5 +18,6 @@ public abstract class AbstractActioner {
         }
     }
 
+    public abstract IComponent getResult();
     protected abstract void processSentence(IComponent sentence);
 }

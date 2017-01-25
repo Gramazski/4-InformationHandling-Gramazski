@@ -45,9 +45,11 @@ public class InterpreterClient {
                 case 'c':
                     listExpression.add(new TerminalExpressionCosine());
                     break;
+                case 'p':
+                    listExpression.add(new NonterminalExpressionNumber(Math.PI));
                 default:
                     Scanner scan = new Scanner(lexeme);
-                    if (scan.hasNextInt()) {
+                    if (scan.hasNextDouble()) {
                         listExpression.add(
                                 new NonterminalExpressionNumber(scan.nextDouble()));
                     }
