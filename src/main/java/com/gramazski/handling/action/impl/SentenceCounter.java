@@ -14,9 +14,9 @@ import java.util.List;
 /**
  * Created by gs on 23.01.2017.
  */
-public class SentenceCounterActioner extends AbstractActioner {
+public class SentenceCounter extends AbstractActioner {
     private ArrayList<IComponent> sentenceWithSameWords = new ArrayList<IComponent>();
-    private Logger logger = LogManager.getLogger(TextComposite.class);
+    private Logger logger = LogManager.getLogger(SentenceCounter.class);
 
     public IComponent getResult() {
         IComponent resultComponent = new TextComposite(TextPartType.TEXT, "");

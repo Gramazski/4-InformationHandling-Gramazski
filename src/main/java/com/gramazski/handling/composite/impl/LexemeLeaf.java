@@ -25,6 +25,10 @@ public class LexemeLeaf implements IComponent, Cloneable {
         lexeme = value.charAt(0);
     }
 
+    public void remove(int index) {
+        //Doing nothing
+    }
+
     public List<IComponent> getInnerList() {
         //Not realized
         return new ArrayList<IComponent>();

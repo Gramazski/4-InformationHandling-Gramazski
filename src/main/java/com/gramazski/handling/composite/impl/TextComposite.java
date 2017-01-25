@@ -40,6 +40,10 @@ public class TextComposite implements IComponent {
         //Do nothing
     }
 
+    public void remove(int index){
+        textComponents.remove(index);
+    }
+
     public List<IComponent> getInnerList() {
         ArrayList<IComponent> innerComponents = new ArrayList<IComponent>(textComponents.size());
         innerComponents.addAll(textComponents);

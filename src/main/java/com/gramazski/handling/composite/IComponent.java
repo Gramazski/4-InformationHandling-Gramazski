@@ -11,6 +11,7 @@ import java.util.List;
 public interface IComponent extends Cloneable {
     void add(IComponent component);
     void setValue(String value);
+    void remove(int index);
     List<IComponent> getInnerList();
     IComponent clone() throws CloneNotSupportedException;
     TextPartType getComponentType();
