@@ -9,21 +9,15 @@ import java.util.List;
 /**
  * Created by gs on 17.01.2017.
  */
-public class LexemeLeaf implements IComponent {
+public class LexemeLeaf implements IComponent, Cloneable {
     private Character lexeme;
     private TextPartType lexemeType;
 
-    //Adding type defining
     public LexemeLeaf(TextPartType lexemeType){
-        //this.lexeme = lexeme;
         this.lexemeType = lexemeType;
     }
 
     public void add(IComponent component) {
-        //Doing nothing
-    }
-
-    public void remove(IComponent component) {
         //Doing nothing
     }
 
@@ -38,6 +32,15 @@ public class LexemeLeaf implements IComponent {
 
     public TextPartType getComponentType() {
         return lexemeType;
+    }
+
+    public void setInnerList(ArrayList<IComponent> innerList) {
+        //Doing nothing
+    }
+
+    @Override
+    public IComponent clone() throws CloneNotSupportedException {
+        return (IComponent) super.clone();
     }
 
     @Override

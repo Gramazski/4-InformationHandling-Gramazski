@@ -2,6 +2,7 @@ package com.gramazski.handling.composite;
 
 import com.gramazski.handling.composite.attribute.composite.TextPartType;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -9,9 +10,9 @@ import java.util.List;
  */
 public interface IComponent {
     void add(IComponent component);
-    void remove(IComponent component);
-    //Parametrized
     void setValue(String value);
     List<IComponent> getInnerList();
+    IComponent clone() throws CloneNotSupportedException;
     TextPartType getComponentType();
+    void setInnerList(ArrayList<IComponent> innerList);
 }
