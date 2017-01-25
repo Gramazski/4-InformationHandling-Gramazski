@@ -99,7 +99,7 @@ public class ExpressionParser {
     }
 
     //Will be private
-    public String prepareForParsing(String expression){
+    protected String prepareForParsing(String expression){
         String preparedExpression = "(" + expression + ")";
 
         Matcher minusMatcher = MINUS_REG.matcher(preparedExpression);
@@ -108,13 +108,7 @@ public class ExpressionParser {
             int startPosition = minusMatcher.start();
             preparedExpression = preparedExpression.substring(0, startPosition + 1) + "(0" + minusMatcher.group().substring(1) + ")"
                     + preparedExpression.substring(startPosition + minusMatcher.group().length());
-            /*String finded = minusMatcher.group().substring(1);
-            preparedExpression = preparedExpression.replace(finded, "(1" + finded + ")");*/
         }
-
-        preparedExpression = preparedExpression.replace("sin", "s");
-        preparedExpression = preparedExpression.replace("cos", "c");
-        preparedExpression = preparedExpression.replace("Pi", "p");
 
         return preparedExpression;
     }

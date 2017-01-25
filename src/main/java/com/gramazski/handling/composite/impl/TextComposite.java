@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * Created by gs on 17.01.2017.
  */
-public class TextComposite implements IComponent, Cloneable {
+public class TextComposite implements IComponent {
     private ArrayList<IComponent> textComponents;
     private TextPartType textPartType;
     private String separatingLexeme;

@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * Created by gs on 17.01.2017.
  */
-public interface IComponent {
+public interface IComponent extends Cloneable {
     void add(IComponent component);
     void setValue(String value);
     List<IComponent> getInnerList();
