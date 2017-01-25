@@ -9,13 +9,11 @@ import org.junit.Test;
  */
 public class InterpreterClientTest {
     @Test
-    //Unary minus
     public void calculate() throws Exception {
         InterpreterClient interpreterClient = new InterpreterClient();
-        String expression = "Pi";
-        int expected = 2;
+        String expression = "(-5+1/2*(2+5*2))*1200";
+        int expected = 1200;
         ExpressionParser parser = new ExpressionParser();
-        //String inverseExpression = parser.parse(expression);
         interpreterClient.setExpression(expression);
 
         int actual = interpreterClient.calculate().intValue();

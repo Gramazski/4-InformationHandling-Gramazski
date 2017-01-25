@@ -2,17 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="29afd53b-24db-4f47-b590-4d6d6050034b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/gramazski/handling/action/impl/SentenceSorter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/gramazski/handling/action/impl/WordEraser.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/gramazski/handling/action/impl/SentenceSorterTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/gramazski/handling/action/impl/WordEraserTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/gramazski/handling/action/impl/SentenceCounterActioner.java" afterPath="$PROJECT_DIR$/src/main/java/com/gramazski/handling/action/impl/SentenceCounter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gramazski/handling/action/comparator/SentenceByLexemeCountComparator.java" afterPath="$PROJECT_DIR$/src/main/java/com/gramazski/handling/action/comparator/SentenceByLexemeCountComparator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gramazski/handling/composite/IComponent.java" afterPath="$PROJECT_DIR$/src/main/java/com/gramazski/handling/composite/IComponent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gramazski/handling/composite/impl/LexemeLeaf.java" afterPath="$PROJECT_DIR$/src/main/java/com/gramazski/handling/composite/impl/LexemeLeaf.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gramazski/handling/composite/impl/TextComposite.java" afterPath="$PROJECT_DIR$/src/main/java/com/gramazski/handling/composite/impl/TextComposite.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/gramazski/handling/action/impl/SentenceCounterActionerTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/gramazski/handling/action/impl/SentenceCounterActionerTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/gramazski/handling/interpretator/InterpreterClientTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/gramazski/handling/interpretator/InterpreterClientTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/gramazski/handling/interpretator/parser/ExpressionParserTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/gramazski/handling/interpretator/parser/ExpressionParserTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/gramazski/handling/parser/AbstractTextHandlerTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/gramazski/handling/parser/AbstractTextHandlerTest.java" />
     </list>
     <ignored path="4-InformationHandling-Gramazski.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,88 +29,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TextComposite.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/gramazski/handling/composite/impl/TextComposite.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#TextComposite#0;class#TextComposite#0" expanded="false" />
-                <element signature="method#setValue#0;class#TextComposite#0" expanded="false" />
-                <element signature="e#1283#1284#0" expanded="true" />
-                <element signature="e#1327#1328#0" expanded="true" />
-                <element signature="e#1436#1448#0" expanded="true" />
-                <element signature="e#2816#2828#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SentenceCounter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/gramazski/handling/action/impl/SentenceCounter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WordHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/gramazski/handling/parser/impl/WordHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LexemeLeaf.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/gramazski/handling/composite/impl/LexemeLeaf.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-              <folding>
-                <element signature="method#add#0;class#LexemeLeaf#0" expanded="false" />
-                <element signature="method#remove#0;class#LexemeLeaf#0" expanded="false" />
-                <element signature="method#getInnerList#0;class#LexemeLeaf#0" expanded="false" />
-                <element signature="method#setInnerList#0;class#LexemeLeaf#0" expanded="false" />
-                <element signature="method#clone#0;class#LexemeLeaf#0" expanded="false" />
-                <element signature="e#1221#1222#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SentenceCounterActionerTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/gramazski/handling/action/impl/SentenceCounterActionerTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-127">
-              <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="55" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1274#1275#0" expanded="true" />
-                <element signature="e#1346#1347#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SentenceSorter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/gramazski/handling/action/impl/SentenceSorter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="27" column="12" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#717#729#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="WordEraser.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/gramazski/handling/action/impl/WordEraser.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -129,11 +41,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WordEraserTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="WordEraserTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/gramazski/handling/action/impl/WordEraserTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="901">
-              <caret line="53" column="17" selection-start-line="53" selection-start-column="17" selection-end-line="53" selection-end-column="17" />
+            <state relative-caret-position="612">
+              <caret line="42" column="5" selection-start-line="20" selection-start-column="4" selection-end-line="42" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1316#1317#0" expanded="true" />
@@ -143,11 +55,81 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="SentenceSorterTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/gramazski/handling/action/impl/SentenceSorterTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="696">
+              <caret line="51" column="135" selection-start-line="51" selection-start-column="135" selection-end-line="51" selection-end-column="135" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SentenceCounterActionerTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/gramazski/handling/action/impl/SentenceCounterActionerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="403">
+              <caret line="50" column="118" selection-start-line="50" selection-start-column="118" selection-end-line="50" selection-end-column="118" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AbstractTextHandlerTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/gramazski/handling/parser/AbstractTextHandlerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="267">
+              <caret line="53" column="24" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="24" />
+              <folding>
+                <element signature="e#1207#1208#0" expanded="true" />
+                <element signature="e#1279#1280#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InterpreterClientTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/gramazski/handling/interpretator/InterpreterClientTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ExpressionParserTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/gramazski/handling/interpretator/parser/ExpressionParserTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="12" column="49" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TextCompositeTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/gramazski/handling/composite/impl/TextCompositeTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+              <folding>
+                <element signature="e#1207#1208#0" expanded="true" />
+                <element signature="e#1279#1280#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="texting.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/data/texting.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+            <state relative-caret-position="153">
+              <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -195,7 +177,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/gramazski/handling/composite/factory/impl/CompositeFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gramazski/handling/parser/impl/LetterHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gramazski/handling/parser/impl/ParagraphHandler.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/gramazski/handling/parser/AbstractTextHandlerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gramazski/handling/interpretator/AbstrectExpression.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gramazski/handling/interpretator/impl/terminal/TerminalExpressionSubstract.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gramazski/handling/reader/file/TextFileReader.java" />
@@ -212,9 +193,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/gramazski/handling/action/SentenceCounterHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gramazski/handling/action/impl/SentenceCounterHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gramazski/handling/composite/factory/impl/LeafFactory.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/gramazski/handling/interpretator/parser/ExpressionParserTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gramazski/handling/interpretator/InterpreterClient.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/gramazski/handling/interpretator/InterpreterClientTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gramazski/handling/parser/impl/SentenceHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gramazski/handling/exception/KeyNotFoundException.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gramazski/handling/composite/storage/StorageTable.java" />
@@ -222,7 +201,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/gramazski/handling/action/AbstractActioner.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/gramazski/handling/composite/impl/TextCompositeTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gramazski/handling/action/impl/SentenceCounterActioner.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/gramazski/handling/action/impl/SentenceCounterActionerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gramazski/handling/parser/impl/WordHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gramazski/handling/interpretator/parser/ExpressionParser.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gramazski/handling/action/comparator/SentenceByLexemeCountComparator.java" />
@@ -236,6 +214,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/gramazski/handling/action/impl/WordEraser.java" />
         <option value="$PROJECT_DIR$/src/main/resources/data/text.txt" />
         <option value="$PROJECT_DIR$/src/test/java/com/gramazski/handling/action/impl/WordEraserTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/gramazski/handling/parser/AbstractTextHandlerTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/gramazski/handling/interpretator/InterpreterClientTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/gramazski/handling/interpretator/parser/ExpressionParserTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/gramazski/handling/action/impl/SentenceCounterActionerTest.java" />
       </list>
     </option>
   </component>
@@ -1037,33 +1019,7 @@
       <recent name="C:\Users\gs\Documents\GitHub\4-InformationHandling-Gramazski\src\main\java\com\gramazski\handling" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.WordEraserTest.processSentence">
-    <configuration default="false" name="AbstractTextHandlerTest.decomposeText" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.gramazski.handling.parser.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="4-InformationHandling-Gramazski" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.gramazski.handling.parser" />
-      <option name="MAIN_CLASS_NAME" value="com.gramazski.handling.parser.AbstractTextHandlerTest" />
-      <option name="METHOD_NAME" value="decomposeText" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.SentenceCounterActionerTest.processSentence">
     <configuration default="false" name="TextCompositeTest.cloneTestWithContentComparing" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -1090,6 +1046,84 @@
       <patterns />
       <method />
     </configuration>
+    <configuration default="false" name="WordEraserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.gramazski.handling.action.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="4-InformationHandling-Gramazski" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.gramazski.handling.action.impl" />
+      <option name="MAIN_CLASS_NAME" value="com.gramazski.handling.action.impl.WordEraserTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="SentenceSorterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.gramazski.handling.action.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="4-InformationHandling-Gramazski" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.gramazski.handling.action.impl" />
+      <option name="MAIN_CLASS_NAME" value="com.gramazski.handling.action.impl.SentenceSorterTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="SentenceCounterActionerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.gramazski.handling.action.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="4-InformationHandling-Gramazski" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.gramazski.handling.action.impl" />
+      <option name="MAIN_CLASS_NAME" value="com.gramazski.handling.action.impl.SentenceCounterActionerTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
     <configuration default="false" name="SentenceCounterActionerTest.processSentence" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -1102,58 +1136,6 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.gramazski.handling.action.impl" />
       <option name="MAIN_CLASS_NAME" value="com.gramazski.handling.action.impl.SentenceCounterActionerTest" />
-      <option name="METHOD_NAME" value="processSentence" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="SentenceSorterTest.processSentence" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.gramazski.handling.action.impl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="4-InformationHandling-Gramazski" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.gramazski.handling.action.impl" />
-      <option name="MAIN_CLASS_NAME" value="com.gramazski.handling.action.impl.SentenceSorterTest" />
-      <option name="METHOD_NAME" value="processSentence" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="WordEraserTest.processSentence" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.gramazski.handling.action.impl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="4-InformationHandling-Gramazski" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.gramazski.handling.action.impl" />
-      <option name="MAIN_CLASS_NAME" value="com.gramazski.handling.action.impl.WordEraserTest" />
       <option name="METHOD_NAME" value="processSentence" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -1583,18 +1565,18 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.AbstractTextHandlerTest.decomposeText" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.TextCompositeTest.cloneTestWithContentComparing" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.SentenceCounterActionerTest.processSentence" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.SentenceSorterTest.processSentence" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.WordEraserTest.processSentence" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.TextCompositeTest.cloneTestWithContentComparing" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.WordEraserTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.SentenceSorterTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.SentenceCounterActionerTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.SentenceCounterActionerTest.processSentence" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.WordEraserTest.processSentence" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.SentenceSorterTest.processSentence" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.AbstractTextHandlerTest.decomposeText" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.SentenceCounterActionerTest.processSentence" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.SentenceCounterActionerTest.processSentence" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.SentenceCounterActionerTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.SentenceSorterTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.WordEraserTest" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.TextCompositeTest.cloneTestWithContentComparing" />
       </list>
     </recent_temporary>
@@ -1619,7 +1601,7 @@
       <workItem from="1485189197755" duration="3940000" />
       <workItem from="1485277714826" duration="3026000" />
       <workItem from="1485324280841" duration="6479000" />
-      <workItem from="1485355130709" duration="11074000" />
+      <workItem from="1485355130709" duration="11625000" />
     </task>
     <task id="LOCAL-00001" summary="Project structure added.">
       <created>1484581275004</created>
@@ -1733,43 +1715,50 @@
       <option name="project" value="LOCAL" />
       <updated>1485365950425</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Sentence sorter by words count added (realized with comparator). Word eraser added. Tests for sorter &amp;&amp; eraser are added. Composite get method remove.">
+      <created>1485368677450</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1485368677450</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AbstractTextHandlerTest_decomposeText - 2017.01.25 at 20h 37m 55s.xml">
-      <configuration name="AbstractTextHandlerTest.decomposeText" configurationId="JUnit" />
+    <history-entry file="ExpressionParserTest_parse - 2017.01.25 at 21h 30m 03s.xml">
+      <configuration name="ExpressionParserTest.parse" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SentenceSorterTest_processSentence - 2017.01.25 at 20h 57m 45s.xml">
-      <configuration name="SentenceSorterTest.processSentence" configurationId="JUnit" />
+    <history-entry file="ExpressionParserTest_parse - 2017.01.25 at 21h 30m 23s.xml">
+      <configuration name="ExpressionParserTest.parse" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SentenceSorterTest_processSentence - 2017.01.25 at 21h 01m 10s.xml">
-      <configuration name="SentenceSorterTest.processSentence" configurationId="JUnit" />
+    <history-entry file="ExpressionParserTest_parse - 2017.01.25 at 21h 30m 32s.xml">
+      <configuration name="ExpressionParserTest.parse" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WordEraserTest_processSentence - 2017.01.25 at 21h 17m 27s.xml">
-      <configuration name="WordEraserTest.processSentence" configurationId="JUnit" />
+    <history-entry file="ExpressionParserTest_parse - 2017.01.25 at 21h 30m 46s.xml">
+      <configuration name="ExpressionParserTest.parse" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WordEraserTest_processSentence - 2017.01.25 at 21h 18m 04s.xml">
-      <configuration name="WordEraserTest.processSentence" configurationId="JUnit" />
+    <history-entry file="SentenceCounterActionerTest - 2017.01.25 at 21h 31m 34s.xml">
+      <configuration name="SentenceCounterActionerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WordEraserTest_processSentence - 2017.01.25 at 21h 20m 28s.xml">
-      <configuration name="WordEraserTest.processSentence" configurationId="JUnit" />
+    <history-entry file="SentenceCounterActionerTest_processSentence - 2017.01.25 at 21h 32m 18s.xml">
+      <configuration name="SentenceCounterActionerTest.processSentence" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WordEraserTest_processSentence - 2017.01.25 at 21h 21m 27s.xml">
-      <configuration name="WordEraserTest.processSentence" configurationId="JUnit" />
+    <history-entry file="SentenceSorterTest - 2017.01.25 at 21h 31m 26s.xml">
+      <configuration name="SentenceSorterTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WordEraserTest_processSentence - 2017.01.25 at 21h 21m 40s.xml">
-      <configuration name="WordEraserTest.processSentence" configurationId="JUnit" />
+    <history-entry file="TextCompositeTest_cloneTestWithContentComparing - 2017.01.25 at 21h 31m 06s.xml">
+      <configuration name="TextCompositeTest.cloneTestWithContentComparing" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WordEraserTest_processSentence - 2017.01.25 at 21h 21m 57s.xml">
-      <configuration name="WordEraserTest.processSentence" configurationId="JUnit" />
+    <history-entry file="TextCompositeTest_cloneTestWithReferenceComparing - 2017.01.25 at 21h 31m 01s.xml">
+      <configuration name="TextCompositeTest.cloneTestWithReferenceComparing" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WordEraserTest_processSentence - 2017.01.25 at 21h 22m 55s.xml">
-      <configuration name="WordEraserTest.processSentence" configurationId="JUnit" />
+    <history-entry file="WordEraserTest - 2017.01.25 at 21h 31m 19s.xml">
+      <configuration name="WordEraserTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62342000" />
+    <option name="totallyTimeSpent" value="62893000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="0" />
@@ -1830,7 +1819,8 @@
     <MESSAGE value="Expression parser can parse numbers with 2+ symbols. KeyNotFoundException for StorageTable added." />
     <MESSAGE value="Deep cloning for IComponent added. Test for checking deep cloning added." />
     <MESSAGE value="Executing expressions added." />
-    <option name="LAST_COMMIT_MESSAGE" value="Executing expressions added." />
+    <MESSAGE value="Sentence sorter by words count added (realized with comparator). Word eraser added. Tests for sorter &amp;&amp; eraser are added. Composite get method remove." />
+    <option name="LAST_COMMIT_MESSAGE" value="Sentence sorter by words count added (realized with comparator). Word eraser added. Tests for sorter &amp;&amp; eraser are added. Composite get method remove." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1997,22 +1987,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/gramazski/handling/interpretator/parser/ExpressionParserTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/gramazski/handling/interpretator/InterpreterClientTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gramazski/handling/reader/file/TextFileReader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -2094,18 +2068,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/gramazski/handling/composite/impl/TextCompositeTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="40" column="5" selection-start-line="18" selection-start-column="4" selection-end-line="40" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1207#1208#0" expanded="false" />
-            <element signature="e#1279#1280#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gramazski/handling/parser/impl/SentenceHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -2140,31 +2102,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/gramazski/handling/parser/AbstractTextHandlerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="28" column="35" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gramazski/handling/action/AbstractActioner.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/gramazski/handling/action/impl/SentenceSorterTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="51" column="135" selection-start-line="51" selection-start-column="135" selection-end-line="51" selection-end-column="135" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1265#1266#0" expanded="true" />
-            <element signature="e#1337#1338#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2194,26 +2136,6 @@
             <element signature="imports" expanded="true" />
             <element signature="e#717#729#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/gramazski/handling/action/impl/SentenceCounterActionerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-127">
-          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="55" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1274#1275#0" expanded="true" />
-            <element signature="e#1346#1347#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/data/texting.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2274,14 +2196,80 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/gramazski/handling/parser/AbstractTextHandlerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="53" column="24" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="24" />
+          <folding>
+            <element signature="e#1207#1208#0" expanded="true" />
+            <element signature="e#1279#1280#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/data/texting.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/gramazski/handling/interpretator/InterpreterClientTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/gramazski/handling/interpretator/parser/ExpressionParserTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="12" column="49" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/gramazski/handling/composite/impl/TextCompositeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+          <folding>
+            <element signature="e#1207#1208#0" expanded="true" />
+            <element signature="e#1279#1280#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/gramazski/handling/action/impl/WordEraserTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="53" column="17" selection-start-line="53" selection-start-column="17" selection-end-line="53" selection-end-column="17" />
+        <state relative-caret-position="612">
+          <caret line="42" column="5" selection-start-line="20" selection-start-column="4" selection-end-line="42" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1316#1317#0" expanded="true" />
             <element signature="e#1388#1389#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/gramazski/handling/action/impl/SentenceSorterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="696">
+          <caret line="51" column="135" selection-start-line="51" selection-start-column="135" selection-end-line="51" selection-end-column="135" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/gramazski/handling/action/impl/SentenceCounterActionerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="50" column="118" selection-start-line="50" selection-start-column="118" selection-end-line="50" selection-end-column="118" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
